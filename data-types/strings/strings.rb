@@ -110,10 +110,10 @@ class StringTest < Minitest::Test
   end
 
   def test_11
-    skip
+    # skip
     rhyme = "eeny, meeny, miny, moe"
     # In place of the line below, call a method to achieve the expected output.
-    actual = rhyme._____
+    actual = rhyme.delete("e")
     expected = "ny, mny, miny, mo"
 
     assert_equal expected, actual
