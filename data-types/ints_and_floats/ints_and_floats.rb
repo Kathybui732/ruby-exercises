@@ -22,13 +22,13 @@ class IntsAndFloatsTests < Minitest::Test
   end
 
   def test_3
-    skip
+    # skip
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # divide unlucky by lucky
     # NOTE: this is integer division
-    quotient = ________
+    quotient = unlucky / lucky
     assert_equal 1, quotient
   end
 
