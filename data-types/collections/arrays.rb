@@ -21,23 +21,23 @@ class ArraysTest < Minitest::Test
     nums = [1,2,3]
     # In the line below, call a method on the nums variable
     # defined above to access the second element
-    actual = nums[1]
+    actual = nums[1] #or.first
     expected = 2
     assert_equal expected, actual
   end
 
   def test_22
-    skip
+    # skip
     # In the line below, call a method on the nums variable
     # defined above to access the last element
     nums = [1,2,3]
-    actual = nums
+    actual = nums.last
     expected = 3
     assert_equal expected, actual
 
     # Now try to find another way to achieve the same effect
     nums = [1,2,3]
-    actual = nums
+    actual = nums[-1]
     expected = 3
     assert_equal expected, actual
   end
