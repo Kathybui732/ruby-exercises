@@ -82,11 +82,11 @@ class IntsAndFloatsTests < Minitest::Test
 
 
   def test_9
-    skip
+    # skip
     pi = 3.14
     # Using the variable defined above,
     # round the number to the next highest whole number
-    rounded = _________
+    rounded = pi.ceil
     assert_equal 4, rounded
   end
 end
