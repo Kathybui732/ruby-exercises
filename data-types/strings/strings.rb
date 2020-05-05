@@ -150,10 +150,10 @@ class StringTest < Minitest::Test
   end
 
   def test_15
-    skip
+    # skip
     greeting = "Hello       World!"
     # In place of the line below, call a method to get the number of characters in the string
-    actual = greeting._____
+    actual = greeting.size
     expected = 18
 
     assert_equal expected, actual
