@@ -164,11 +164,11 @@ class ArraysTest < Minitest::Test
   end
 
   def test_12
-    skip
+    # skip
     children = ["Sarah", "Owen", "Peter"]
     # Call a method on the children variable to combine them into
     # one string like this: "Sarah, Owen, Peter"
-    one_string = children
+    one_string = children.join(", ")
     assert_equal "Sarah, Owen, Peter", one_string
   end
 
