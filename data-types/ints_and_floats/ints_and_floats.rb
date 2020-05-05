@@ -43,12 +43,12 @@ class IntsAndFloatsTests < Minitest::Test
   end
 
   def test_5
-    skip
+    # skip
     lucky = 7
     unlucky = 13
     # Using the two variables defined above,
     # find the remainder of the unlucky divided by the lucky
-    remainder = ____________
+    remainder = unlucky % lucky
     assert_equal 6, remainder
   end
 
