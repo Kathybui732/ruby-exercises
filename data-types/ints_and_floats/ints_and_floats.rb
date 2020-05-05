@@ -71,11 +71,11 @@ class IntsAndFloatsTests < Minitest::Test
   end
 
   def test_8
-    skip
+    # skip
     pi = 3.14
     # Using the variable defined above,
     # round the number to one decimal place
-    rounded = _________
+    rounded = pi.round(1)
     assert_equal 3.1, rounded
   end
 
