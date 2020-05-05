@@ -153,7 +153,7 @@ class StringTest < Minitest::Test
     # skip
     greeting = "Hello       World!"
     # In place of the line below, call a method to get the number of characters in the string
-    actual = greeting.size
+    actual = greeting.chars.size
     expected = 18
 
     assert_equal expected, actual
@@ -163,7 +163,7 @@ class StringTest < Minitest::Test
     # skip
     greeting = "Hello World!"
     # In place of the line below, call a method to get the number of 'o' in the string
-    actual = greeting.split.size
+    actual = greeting.count("o")
     expected = 2
 
     assert_equal expected, actual
