@@ -43,11 +43,11 @@ class ArraysTest < Minitest::Test
   end
 
   def test_3
-    skip
+    # skip
     hummus = ["tahini", "chickpeas", "lemons"]
     # Call a method on the hummus variable that will
     # tell us how many elements there are in the array
-    assert_equal 3, hummus._____
+    assert_equal 3, hummus.size
   end
 
   def test_4
