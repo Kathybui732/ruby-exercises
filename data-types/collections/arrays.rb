@@ -17,11 +17,11 @@ class ArraysTest < Minitest::Test
   end
 
   def test_2
-    skip
+    # skip
     nums = [1,2,3]
     # In the line below, call a method on the nums variable
     # defined above to access the second element
-    actual = nums.______
+    actual = nums[1]
     expected = 2
     assert_equal expected, actual
   end
