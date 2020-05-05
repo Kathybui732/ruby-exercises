@@ -7,6 +7,6 @@ class Horse
   end
 
   def add_to_diet(food)
-    diet << (food)
+    @diet << (food)
   end
 end
