@@ -125,10 +125,10 @@ class ArraysTest < Minitest::Test
   end
 
   def test_8
-    skip
+    # skip
     pokemon = [["Squirtle", "Charmander", "Bulbasaur"], ["Pikachu"], "Staryu"]
     # Call a method on the pokemon variable to remove the nesting
-    pokemon = pokemon
+    pokemon = pokemon.flatten
     assert_equal ["Squirtle", "Charmander", "Bulbasaur", "Pikachu", "Staryu"], pokemon
   end
 
