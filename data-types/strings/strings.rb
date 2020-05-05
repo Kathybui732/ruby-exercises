@@ -50,10 +50,10 @@ class StringTest < Minitest::Test
   end
 
   def test_5
-    skip
+    # skip
     word = "ticking"
     # In place of the line below, call a method to achieve the expected output.
-    actual = word.______
+    actual = word.gsub("t", "k")
     expected = "kicking"
 
     assert_equal expected, actual
