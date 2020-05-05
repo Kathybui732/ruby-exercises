@@ -230,10 +230,10 @@ class StringTest < Minitest::Test
   end
 
   def test_21
-    skip
+    # skip
     phrase = "   \n  \tto the    moon\n\n\t    "
     # In place of the line below, call a method to acheive the expected outcome
-    actual = phrase._____
+    actual = phrase.strip.chomp
     expected = "to the    moon"
 
     assert_equal expected, actual
@@ -243,7 +243,7 @@ class StringTest < Minitest::Test
     skip
     phrase = "   \n  \tto the    moon\n\n\t    "
     # In place of the line below, call a method to acheive the expected outcome
-    actual = phrase._____
+    actual = phrase
     expected = "   \n  \tto the    moon"
 
     assert_equal expected, actual
