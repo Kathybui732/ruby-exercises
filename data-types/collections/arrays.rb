@@ -3,14 +3,14 @@ require 'minitest/pride'
 
 class ArraysTest < Minitest::Test
   def test_0
-    skip
+    # skip
     # In the line below, create a new empty array
-    empty = ______
+    empty = Array.new
     assert_equal [], empty
   end
 
   def test_1
-    skip
+    # skip
     # In the line below, create and array with the numbers 1 - 5
     nums = ______
     assert_equal [1,2,3,4,5], nums
