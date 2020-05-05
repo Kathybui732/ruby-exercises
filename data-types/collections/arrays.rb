@@ -155,11 +155,11 @@ class ArraysTest < Minitest::Test
   end
 
   def test_11
-    skip
+    # skip
     furniture = ["couch", "bed", "table"]
     # Call a method on the furniture variable to add the element
     # "dresser" in between the elements "couch" and "bed"
-    new_furniture = furniture
+    new_furniture = furniture.insert(1, "dresser")
     assert_equal ["couch", "dresser", "bed", "table"], new_furniture
   end
 
