@@ -87,11 +87,11 @@ class ArraysTest < Minitest::Test
   end
 
   def test_b
-    skip
+    # skip
     band = ["Guitar", "Drums", "Bass"]
     # Call a method on the band variable to add the element "Vocals"
     # to the beginning of the array
-
+    band.unshift("Vocals")
     assert_equal ["Vocals", "Guitar", "Drums", "Bass"], band
   end
 
