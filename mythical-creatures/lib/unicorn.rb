@@ -7,8 +7,7 @@ class Unicorn
   end
 
   def white?
-    return true if @color == "white"
-    false
+    @color == "white"
   end
 
   def say(phrase)
