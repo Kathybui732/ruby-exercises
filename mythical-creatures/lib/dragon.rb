@@ -11,8 +11,7 @@ class Dragon
   end
 
   def hungry?
-    return false if @meals >= 3
-    true
+    @meals < 3
   end
 
   def eat
