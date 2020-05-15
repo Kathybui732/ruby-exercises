@@ -58,7 +58,7 @@ class Centaur
 
   def drink_potion
     @potions_consumed += 1
-    @action = 0 if !standing?
+    @action = 0 if standing?
   end
 
   def rested?
