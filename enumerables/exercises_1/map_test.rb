@@ -21,7 +21,6 @@ class MapTest < Minitest::Test
   end
 
   def test_squares
-    # skip
     numbers = [1, 2, 3, 4, 5]
     squares = numbers.map do |number|
       number ** 2
@@ -30,7 +29,6 @@ class MapTest < Minitest::Test
   end
 
   def test_lengths
-    # skip
     names = ["alice", "bob", "charlie", "david", "eve"]
     lengths = names.map do |name|
       name.length
@@ -39,7 +37,6 @@ class MapTest < Minitest::Test
   end
 
   def test_normalize_zip_codes
-    # skip
     numbers = [234, 10, 9119, 38881]
     zip_codes = numbers.map do |number|
       number.to_s.rjust(5, "0")
@@ -48,7 +45,6 @@ class MapTest < Minitest::Test
   end
 
   def test_backwards
-    # skip
     names = ["alice", "bob", "charlie", "david", "eve"]
     backwards = names.map do |name|
       name.reverse
@@ -57,7 +53,6 @@ class MapTest < Minitest::Test
   end
 
   def test_words_with_no_vowels
-    # skip
     words = ["green", "sheep", "travel", "least", "boat"]
     without_vowels = words.map do |word|
       word.delete("aeiou")
@@ -66,7 +61,6 @@ class MapTest < Minitest::Test
   end
 
   def test_trim_last_letter
-    # skip
     animals = ["dog", "cat", "mouse", "frog", "platypus"]
     trimmed = animals.map do |animal|
       animal.chop

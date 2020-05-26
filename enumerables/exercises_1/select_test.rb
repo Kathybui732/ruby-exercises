@@ -21,7 +21,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_words_with_three_letters
-    # skip
     words = ["pill", "bad", "finger", "cat", "blue", "dog", "table", "red"]
     selected = words.select do |word|
       word.length == 3
@@ -30,7 +29,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_words_with_more_than_three_letters
-    # skip
     words = ["pill", "bad", "finger", "cat", "blue", "dog", "table", "red"]
     selected = words.select do |word|
       word.length > 3
@@ -39,7 +37,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_words_ending_in_e
-    # skip
     words = ["are", "you", "strike", "thinking", "belt", "piece", "warble", "sing", "pipe"]
     selected = words.select do |word|
       word.end_with?("e")
@@ -48,7 +45,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_words_ending_in_ing
-    # skip
     words = ["bring", "finger", "drought", "singing", "bingo", "purposeful"]
     selected = words.select do |word|
       word.end_with?("ing")
@@ -57,7 +53,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_words_containing_e
-    # skip
     words = ["four", "red", "five", "blue", "pizza", "purple"]
     selected = words.select do |word|
       word.include?("e")
@@ -66,7 +61,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_dinosaurs
-    # skip
     animals = ["tyrannosaurus", "narwhal", "eel", "achillesaurus", "qingxiusaurus"]
     dinosaurs = animals.select do |animal|
       animal.end_with?("saurus")
@@ -75,7 +69,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_floats
-    # skip
     numbers = [3, 1.4, 3.5, 2, 4.9, 9.1, 8.0]
     floats = numbers.select do |number|
       number.is_a?(Float)
@@ -84,7 +77,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_arrays
-    # skip
     elements = ["CAT", ["dog"], 23, [56, 3, 8], "AIMLESS", 43, "butter"]
     arrays = elements.select do |element|
       element.is_a?(Array)
@@ -93,7 +85,6 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_hashes
-    # skip
     elements = ["cat", {:dog=>"fido"}, 23, {:stuff=>"things"}, "aimless", 43]
     hashes = elements.select do |element|
       element.is_a?(Hash)

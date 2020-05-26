@@ -23,7 +23,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_words_with_three_letters
-    # skip
     words = ["pill", "bad", "finger", "cat", "blue", "dog", "table", "red"]
     selected = []
     words.each do |word|
@@ -33,7 +32,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_words_with_more_than_three_letters
-    # skip
     words = ["pill", "bad", "finger", "cat", "blue", "dog", "table", "red"]
     selected = []
     words.each do |word|
@@ -43,7 +41,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_words_ending_in_e
-    # skip
     words = ["are", "you", "strike", "thinking", "belt", "piece", "warble", "sing", "pipe"]
     selected = []
     words.each do |word|
@@ -53,7 +50,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_words_ending_in_ing
-    # skip
     words = ["bring", "finger", "drought", "singing", "bingo", "purposeful"]
     selected = []
     words.each do |word|
@@ -63,7 +59,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_words_containing_e
-    # skip
     words = ["four", "red", "five", "blue", "pizza", "purple"]
     selected = []
     words.each do |word|
@@ -73,7 +68,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_dinosaurs
-    # skip
     animals = ["tyrannosaurus", "narwhal", "eel", "achillesaurus", "qingxiusaurus"]
     dinosaurs = []
     animals.each do |animal|
@@ -83,7 +77,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_floats
-    # skip
     numbers = [3, 1.4, 3.5, 2, 4.9, 9.1, 8.0]
     floats = []
     numbers.each do |number|
@@ -93,7 +86,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_arrays
-    # skip
     elements = ["CAT", ["dog"], 23, [56, 3, 8], "AIMLESS", 43, "butter"]
     arrays = []
     elements.each do |element|
@@ -103,7 +95,6 @@ class SelectPatternTest < Minitest::Test
   end
 
   def test_pick_hashes
-    # skip
     elements = ["cat", {:dog=>"fido"}, 23, {:stuff=>"things"}, "aimless", 43]
     hashes = []
     elements.each do |element|
